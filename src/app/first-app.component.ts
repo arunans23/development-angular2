@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-
+import {OtherComponent, AnotherComponent} from "./other";
 @Component({
   moduleId: module.id,
   selector: 'first-app-app',
-  templateUrl: 'first-app.component.html',
-  styleUrls: ['first-app.component.css']
+  template: '<h1>First App</h1> <app-other></app-other> <app-another></app-another>',
+  styles: ['h1 {color: blue}'],
+  directives: [OtherComponent, AnotherComponent]
 })
 export class FirstAppAppComponent {
-  title = 'first-app works!';
+
 }

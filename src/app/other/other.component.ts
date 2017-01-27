@@ -6,11 +6,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: 'other.component.html',
   styleUrls: ['other.component.css']
 })
-export class OtherComponent implements OnInit {
+export class OtherComponent{
 
   constructor() {}
-
-  ngOnInit() {
-  }
 
 }
