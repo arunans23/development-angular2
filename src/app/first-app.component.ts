@@ -4,7 +4,8 @@ import { DatabindingComponent } from './databinding';
 @Component({
   moduleId: module.id,
   selector: 'first-app-app',
-  template: '<h1>First App</h1>'
+  template: '<h1>First App</h1><app-databinding></app-databinding>',
+  directives: [DatabindingComponent]
 })
 export class FirstAppAppComponent {
 
