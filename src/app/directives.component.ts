@@ -9,4 +9,10 @@ import {HighlightDirective} from "./highlight.directive";
   directives: [HighlightDirective]
 })
 export class DirectivesAppComponent {
+
+  private switch = true;
+
+  onSwitch(){
+    this.switch = !this.switch;
+  }
 }
