@@ -1,2 +1,2 @@
-export {environment} from './environment';
-export {RoutingAppComponent} from './routing.component';
+export * from './environment';
+export * from './app.component';
