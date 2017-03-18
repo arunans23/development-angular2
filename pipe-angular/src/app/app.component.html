@@ -1,3 +1,10 @@
 <h1>
-  {{check}}
+  {{check | uppercase}}
+  <br>
+  {{date | date:"dd/MM/yyyy"}}
 </h1>
+<hr>
+<h1>Custom pipe</h1>
+
+<input type="text" #test (keyup)="0">
+<p>{{test.value | double }}</p>
