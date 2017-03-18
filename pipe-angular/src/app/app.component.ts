@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   check = "myName";
   date = new Date(2017, 3,18);
+  values = ['Milk', 'Bread', 'Beans'];
 }

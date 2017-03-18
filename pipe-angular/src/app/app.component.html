@@ -8,3 +8,6 @@
 
 <input type="text" #test (keyup)="0">
 <p>{{test.value | double }}</p>
+<ul>
+  <li *ngFor="let item of values | filter:'ea'">{{item}}</li>
+</ul>
