@@ -8,6 +8,13 @@
 
 <input type="text" #test (keyup)="0">
 <p>{{test.value | double }}</p>
+<hr>
+<input type="text" #newItem>
+<button (click) = "values.push(newItem.value)" class="btn btn-primary">Add Item</button>
 <ul>
   <li *ngFor="let item of values | filter:'ea'">{{item}}</li>
 </ul>
+
+<hr>
+<h1>Async pipe</h1>
+<p>{{ayncValue | async}}</p>

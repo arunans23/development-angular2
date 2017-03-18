@@ -9,4 +9,7 @@ export class AppComponent {
   check = "myName";
   date = new Date(2017, 3,18);
   values = ['Milk', 'Bread', 'Beans'];
+  ayncValue = new Promise((resolve, reject) => {
+    setTimeout(() => resolve('Data is here!'), 2000);
+  });
 }
