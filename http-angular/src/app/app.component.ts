@@ -20,7 +20,8 @@ export class AppComponent{
       username: username,
       email: email
     }).subscribe(
-      data => console.log(data)
+      data => console.log(data),
+      error => console.log(error)
     );
   }
 
